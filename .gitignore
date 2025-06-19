@@ -1,0 +1,11 @@
+.logs/
+.env/
+zap/
+
+.TOKEN
+.histfile
+.zcompdump
+
+history
+spaceship.zsh.zwc
+
