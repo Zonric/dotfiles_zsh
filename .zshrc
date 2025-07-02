@@ -1,6 +1,7 @@
 fpath=(${ZDOTDIR}/functions $fpath)
 export ZAPDIR="$ZDOTDIR/zap"
 export SPACESHIP_CONFIG="$ZDOTDIR/spaceship.zsh"
+export PHP_CS_FIXER_IGNORE_ENV=1
 
 HISTFILE="${XDG_CONFIG_HOME}/zsh/history"
 HISTSIZE=5000
@@ -40,5 +41,5 @@ bindkey "^N" history-substring-search-down
 bindkey "^Y" autosuggest-accept
 
 # Load aliases
-source "${XDG_CONFIG_HOME:-${HOME}/.config}/alias"
+[[ -f "$XDG_CONFIG_HOME/alias" ]] && source "$XDG_CONFIG_HOME/alias"
 
